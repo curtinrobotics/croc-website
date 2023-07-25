@@ -10,8 +10,9 @@ We run a variety of projects of differing difficulties. These projects each have
 
 You can find us in person on the Curtin University Bently Campus in Building 215 room 105. Or feel free to contact us through one of our other channels:
 
-Email: [executive@curtinrobotics.org](mailto:executive@curtinrobotics.org)
+Email: [contact@curtinrobotics.org](mailto:contact@curtinrobotics.org)
 
-Facebook: [https://www.facebook.com/CurtinRoboticsClub/](https://www.facebook.com/CurtinRoboticsClub/)
+Facebook: [facebook.com/CurtinRoboticsClub/](https://www.facebook.com/CurtinRoboticsClub/)
+Linktree: [linktr.ee/curtinroboticsclub](https://linktr.ee/curtinroboticsclub)
 
 
