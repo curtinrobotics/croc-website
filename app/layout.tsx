@@ -30,7 +30,7 @@ export default function RootLayout({
         </div>
         <div>
           <a href="https://croc.tidyhq.com/public/membership_levels">
-            <button className="bg-white text-croc-dark-blue px-5 py-2 rounded-full hover:bg-croc-blue hover:text-white mt-4">Become a Member</button>
+            <button className="bg-white md:text-base text-xs text-croc-dark-blue px-5 py-2 rounded-full hover:bg-croc-blue hover:text-white md:mt-4 mt-5">Become a Member</button>
           </a>
         </div>
       </nav>
@@ -42,7 +42,7 @@ export default function RootLayout({
       <div className="border-t border-croc-light-grey py-6 text-left px-8 text-croc-light-grey text-xs flex justify-between">
         <div>
         <h3>Find Us: Building 215 Engineering Pavilion, Curtin University Bently</h3>
-        <Link href="/">
+        <Link href="/about-us">
           <h3>Contact Us: admin@curtinrobotics.org</h3>
         </Link>
         </div>
