@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+  font-family: "futura";
+  src: url(../public/fonts/Futura-Medium.ttf);
+
+  font-family: "Avenir-Condensed";
+  src: url(../public/fonts/AvenirNextCondensed-Regular.ttf);
+
+  font-family: "Avenir-Demibold";
+  src: url(../public/fonts/AvenirNext-DemiBold.ttf);
+
+  font-family: "Montserrat", sans-serif;
+
+  font-family: "ROBOTECH";
+  src: url(../public/fonts/ROBOTECH.ttf);
+}
