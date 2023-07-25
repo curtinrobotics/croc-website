@@ -41,9 +41,9 @@ export default function RootLayout({
     <footer>
       <div className="border-t border-croc-light-grey py-6 text-left px-8 text-croc-light-grey text-xs flex justify-between">
         <div>
-        <h3>Find Us: Building 215 Engineering Pavilion, Curtin University Bently</h3>
+        <h3>Find Us: Building 215 Engineering Pavilion, Curtin University Bentley</h3>
         <Link href="/about-us">
-          <h3>Contact Us: admin@curtinrobotics.org</h3>
+          <h3>Contact Us: contact@curtinrobotics.org</h3>
         </Link>
         </div>
         <Link href="https://www.facebook.com/CurtinRoboticsClub/">
