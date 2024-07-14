@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
       colors: {
         'croc-blue': '#4295D1',
         'croc-light-grey': '#999999',
