@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import Countdown from '@/components/Countdown';
 import getEventMetadata from "@/components/getEventMetadata";
 import { EventMetadata } from "@/components/EventMetadata";
+import ParallaxBackground from '@/components/ParallaxBG';
 
 const getPageContent = (slug: string) => {
     const folder = "events/";
@@ -18,8 +19,8 @@ const HackathonPage = (props : any) => {
     const eventMetadata: EventMetadata[] = getEventMetadata();
     const content = getPageContent(slug);
     return (
-        <div className="bg-croc-dark-blue">
-            <div className="py-10 px-4 mx-6 md:mx-[20%] min-h-screen">  
+        <ParallaxBackground>
+            <div className="py-10 px-4 mx-6 md:mx-[25%] min-h-screen">  
                 {eventMetadata.map((event) => (
                     <div key={event.slug}>
                         <h1 className="md:text-7xl text-6xl font-croc-logo drop-shadow-md text-white text-center">{event.title}</h1>
@@ -28,11 +29,11 @@ const HackathonPage = (props : any) => {
                         <p className="italic md:text-2xl text-xl text-white py-3 text-center">{event.subtitle}</p>
                     </div>
                 ))}
-                <article className="prose md:prose-xl prose-img:w-full max-w-none text-white text-justify font-croc-paragraph">
+                <article className="prose md:prose-xl prose-img:w-full max-w-none text-white text-left font-croc-paragraph">
                     <Markdown>{content}</Markdown>
                 </article>
             </div> 
-        </div>
+        </ParallaxBackground>
     );
 };
 
