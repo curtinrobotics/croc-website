@@ -1,5 +1,5 @@
 ---
-title: "ADVANCED HACKATHON!"
+title: "HACKATHON!"
 subtitle: "Hackathon is back again with a brand new challenge!"
 date: "2nd & 3rd of September 2024, 10 AM - 5 PM"
 countdownto: "2024-09-02T10:00:00"
