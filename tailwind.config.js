@@ -22,6 +22,42 @@ module.exports = {
         'croc-title': ['futura'],
         'croc-logo': ['ROBOTECH']
       },
+      typography: (theme) => ({
+        hackathon: {
+          css: {
+            h1: {
+              fontFamily: 'futura',
+              fontWeight: '800',
+              color: '#4295D1',
+              fontSize: '1.5em',
+              marginTop: '2em',
+              marginBottom: '1em',
+              lineHeight: '1.33333',
+              '@screen sm': {
+                fontSize: '1.8em',
+                marginTop: '1.5555556em',
+                marginBottom: '0.8888889em',
+                lineHeight: '1.1111111',
+              },
+            },
+            h2: {
+              fontFamily: ['Avenir-Condensed', 'sans-serif'],
+              color: theme('colors.white'),
+            },
+            p: {
+              fontFamily: ['Avenir-Condensed', 'sans-serif'],
+              color: theme('colors.white'),
+              marginTop: '1.2em',
+              marginBottom: '1.2em',
+              '@screen sm': {
+                fontSize: '1.25em',
+                marginTop: '1.2em',
+                marginBottom: '1.2em',
+              },
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [require('@tailwindcss/typography')],
