@@ -29,9 +29,9 @@ const HomePage = () => {
         <img className="w-full md:aspect-[3/1] aspect-[3/2] object-cover object-bottom" src="images/coverimage.jpg"></img>
         <div className="w-full flex flex-col absolute top-1/3 left-0 md:pr-10 text-white justify-center text-center md:text-right">
           <h1 className="md:text-8xl text-5xl font-croc-logo drop-shadow-md">
-            Eager to Build?</h1>
+            Projects</h1>
           <p className="md:text-4xl text-3xl font-croc-paragraph drop-shadow-md">
-            Check out our projects</p> 
+            Check out what we build</p> 
         </div>
         </Link>
       </div>
@@ -41,9 +41,9 @@ const HomePage = () => {
         <img className="w-full md:aspect-[3/1] aspect-[3/2] object-cover object-bottom" src="images/cover_3.jpg"></img>
         <div className="w-full flex flex-col absolute top-1/3 left-0 md:pl-10 text-white justify-center text-center md:text-left">
           <h1 className="md:text-8xl text-5xl font-croc-logo drop-shadow-md">
-            What`s On?</h1>
+            Events</h1>
           <p className="md:text-4xl text-3xl font-croc-paragraph drop-shadow-md">
-            See our events</p> 
+            See whats on</p> 
         </div>
         </Link>
       </div>
@@ -53,9 +53,9 @@ const HomePage = () => {
         <img className="w-full md:aspect-[3/1] aspect-[3/2] object-cover object-bottom" src="images/cover_hackathon_2.jpg"></img>
         <div className="w-full flex flex-col absolute top-1/3 left-0 md:pr-10 text-white justify-center text-center md:text-right">
           <h1 className="md:text-8xl text-5xl font-croc-logo drop-shadow-md">
-            Want a Challenge?</h1>
+            Hackathon</h1>
           <p className="md:text-4xl text-3xl font-croc-paragraph drop-shadow-md">
-            See our next Hackathon</p> 
+            Join our next Challange</p> 
         </div>
         </Link>
       </div>

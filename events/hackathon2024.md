@@ -3,12 +3,36 @@ title: "HACKATHON!"
 subtitle: "Hackathon is back again with a brand new challenge!"
 date: "2nd & 3rd of September 2024, 10 AM - 5 PM"
 countdownto: "2024-09-02T10:00:00"
-poster: ""
+poster: "/images/Hackathon_2024.png"
 ---
 
-Your Mission, should you choose to accept it, is to create a bot that can pull off the expedition of the century!
+#MISSION DETAILS
+Objective: Create a bot for an exciting expedition
 
-Over 2 days during the study break, participants will come together in teams to complete a set of challanges. 
-Some Arduino experience is recommended for this ADVANCED Hackathon.
+Duration: 2 days during the study break
 
-More information to be revealed, so watch this space!
+Teamwork: Collaborate in teams to complete various challenges
+
+Skill Level: Advanced. Some Arduino Experience is recommended
+
+#WHAT YOU NEED TO KNOW
+Familiarity: Basic knowledge of Arduino or the Arduino IDE is recommended
+
+Components: All materials and components will be provided on the day
+
+Preperation: A mission briefing will be sent out before the event
+
+#WHAT TO BRING
+Laptops and Chargers: Don't forget to bring your own
+
+Arduino IDE: Ensure it's installed on your laptop
+
+#EXTRAS
+Free Food: Second day lunch!
+
+Free Event: No cost to participate!
+
+#GET TICKETS NOW!
+Reserve your place below! To ensure we can cater and prepare robotics kits for everyone
+
+Questions? Feel free to message us anytime
