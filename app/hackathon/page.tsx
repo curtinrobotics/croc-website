@@ -18,7 +18,7 @@ const HackathonPage = (props : any) => {
     const eventMetadata: EventMetadata[] = getEventMetadata();
     const content = getPageContent(slug);
     return (
-        <div className="md:bg-[url('/images/Hackathon2024_wide.png')] bg-[url('/images/Hackathon_2024_tall.png')] bg-fixed bg-cover bg-center">
+        <div className="md:bg-[url('/images/Hackathon2024_wide.png')] bg-[url('/images/Hackathon_2024_tall.jpg')] bg-fixed bg-cover bg-center">
             <div className="py-10 px-4 mx-6 md:mx-[25%] min-h-screen">  
                 {eventMetadata.map((event) => (
                     <div key={event.slug}>
