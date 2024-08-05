@@ -19,15 +19,15 @@ module.exports = {
       fontFamily: {
         'croc-paragraph': ['Avenir-Condensed', 'sans-serif'],
         'croc-head': ['Avenir-Demibold', 'sans-serif'],
-        'croc-title': ['futura'],
+        'croc-title': ['futura', 'sans-serif'],
         'croc-logo': ['ROBOTECH']
       },
       typography: (theme) => ({
         hackathon: {
           css: {
             h1: {
-              fontFamily: 'futura',
-              fontWeight: '800',
+              fontFamily: ['futura', 'sans-serif'],
+              fontWeight: '700',
               color: '#4295D1',
               fontSize: '1.5em',
               marginTop: '2em',
