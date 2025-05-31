@@ -17,6 +17,7 @@ const getEventMetadata = (): EventMetadata[] => {
       date: matterResult.data.date,
       countdownto: matterResult.data.countdownto,
       poster: matterResult.data.poster,
+      tickets: matterResult.data.tickets,
       slug: fileName.replace(".md", ""),
     };
   });

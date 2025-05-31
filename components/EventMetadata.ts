@@ -4,5 +4,6 @@ export interface EventMetadata {
     date: string;
     countdownto: string;
     poster: string;
+    tickets: string;
     slug: string;
 }

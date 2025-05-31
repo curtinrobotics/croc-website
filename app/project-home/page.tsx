@@ -11,8 +11,8 @@ const ProjectHome = () => {
 
   return (
     <>
-        <h1 className="md:mx-14 md:text-left text-center text-white md:text-7xl text-6xl font-croc-logo">Projects</h1>
-        <div className="md:mx-10 mx-5 py-6 grid grid-cols-2 md:grid-cols-3">{pagePreviews}</div>
+        <h1 className="md:mx-14 mt-10 md:text-left text-center text-white md:text-7xl text-6xl font-croc-logo">Projects</h1>
+        <div className="md:mx-10 mx-5 py-6 grid grid-cols-2 md:grid-cols-4">{pagePreviews}</div>
     </>
   );
 };
