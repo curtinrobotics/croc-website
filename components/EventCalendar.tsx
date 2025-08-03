@@ -1,4 +1,4 @@
-'use client';
+/*'use client';
 import React from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
@@ -33,4 +33,4 @@ const EventCalendar: React.FC<EventCalendarProps> = ({ events }) => {
   );
 };
 
-export default EventCalendar;
+export default EventCalendar;*/
