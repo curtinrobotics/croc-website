@@ -20,6 +20,8 @@ const HackathonPage = (props: any) => {
 
     const event = eventMetadata.find((e) => e.slug === slug);
     
+    if (!event) return null; //prevents build-time crash (cannot build without this)
+
     return (
         <div className="relative w-full h-full">
             {event.poster.endsWith(".mp4") ? (
