@@ -39,7 +39,7 @@ export default function UpcomingEvents() {
         {!isOpen && (
           <button
             onClick={() => setIsOpen(true)}
-            className="bg-croc-dark-blue text-white p-3 rounded-l-3xl shadow-md hover:bg-croc-blue transition"
+            className="border-croc-light-grey border-y border-l bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm text-white p-3 rounded-l-3xl shadow-md hover:bg-croc-blue transition"
           >
             <IoIosArrowBack className="text-2xl" />
           </button>
@@ -47,9 +47,9 @@ export default function UpcomingEvents() {
 
         {/* Expanded Panel */}
         {isOpen && (
-          <div className="bg-croc-dark-blue text-white rounded-l-3xl shadow-xl p-4 w-64">
+          <div className={`border-croc-light-grey border-y border-l bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm text-white rounded-l-3xl shadow-xl p-4 w-64`}>
             <div className="flex justify-between items-center mb-3">
-              <h3 className="text-xl font-bold">Upcoming Events 📅</h3>
+              <h3 className="text-xl font-bold">Upcoming Events</h3>
               {/* Close Button */}
               <button onClick={() => setIsOpen(false)} className="text-white">
                 <IoIosArrowForward className="text-2xl" />
@@ -57,7 +57,7 @@ export default function UpcomingEvents() {
             </div>
             <ul className="space-y-3">
               {events.map((event, index) => (
-                <li key={index} className="border-b border-gray-600 pb-2">
+                <li key={index} className="border-b border-gray-300 pb-2">
                   <a href={event.link} className="hover:text-croc-blue transition">
                     <p className="font-semibold">{event.title}</p>
                     <p className="text-sm text-gray-300">{event.date}</p>
@@ -69,24 +69,24 @@ export default function UpcomingEvents() {
         )}
       </div>
 
-      {/* 📌 Mobile Version: Floating Button & Slide-Up Panel */}
+      {/* Mobile Version: Floating Button & Slide-Up Panel */}
       <div className="md:hidden fixed bottom-6 right-6 z-[1000]">
         {/* Floating Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-croc-dark-blue text-white p-3 rounded-full shadow-md hover:bg-croc-blue transition"
+          className="bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm text-white p-3 rounded-full shadow-md hover:bg-croc-blue transition"
         >
           <FaCalendarAlt className="text-2xl" />
         </button>
 
         {/* Slide-Up Events Panel */}
         <div
-          className={`fixed bottom-0 left-0 w-full bg-croc-dark-blue text-white rounded-t-3xl shadow-xl p-4 transition-transform duration-300 ${
+          className={`border-croc-light-grey border-t fixed bottom-0 left-0 w-full bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm text-white rounded-t-3xl shadow-xl p-4 transition-transform duration-300 ${
             isOpen ? "translate-y-0" : "translate-y-full"
           }`}
         >
           <div className="flex justify-between items-center mb-3">
-            <h3 className="text-xl font-bold">Upcoming Events 📅</h3>
+            <h3 className="text-xl font-bold">Upcoming Events</h3>
             {/* Close Button */}
             <button onClick={() => setIsOpen(false)} className="text-white">
             ✕
@@ -94,7 +94,7 @@ export default function UpcomingEvents() {
           </div>
           <ul className="space-y-3">
             {events.map((event, index) => (
-              <li key={index} className="border-b border-gray-600 pb-2">
+              <li key={index} className="border-b border-gray-300 pb-2">
                 <a href={event.link} className="hover:text-croc-blue transition">
                   <p className="font-semibold">{event.title}</p>
                   <p className="text-sm text-gray-300">{event.date}</p>

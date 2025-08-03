@@ -10,11 +10,11 @@ const HomePage = () => {
   ));
 
   return (
-    <div className="flex flex-col items-center space-y-8 px-2 pb-3 pt-8">
+    <div className="flex flex-col items-center space-y-8 px-2 md:px-4 pb-4 pt-10 md:pt-12">
 
       {/* Hero Section – nearly full width */}
       <div className="w-full max-w-screen-xl rounded-3xl overflow-hidden shadow-xl relative">
-        <div className="absolute top-0 left-0 w-full h-full bg-croc-dark-blue opacity-50 rounded-3xl"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm opacity-50 rounded-3xl"></div>
         <img className="w-full h-[70vh] object-cover object-center" src="images/cover_2.jpg" />
         <div className="absolute top-1/3 left-0 w-full md:pl-10 px-4 text-white text-center md:text-left">
           <h1 className="md:text-8xl text-6xl font-croc-logo drop-shadow-md">Welcome to CRoC</h1>
@@ -31,7 +31,7 @@ const HomePage = () => {
         {/* Projects */}
         <div className="rounded-3xl overflow-hidden shadow-xl relative group">
           <Link href="/project-home">
-            <div className="absolute inset-0 bg-croc-dark-blue opacity-50 group-hover:opacity-10 transition duration-300 rounded-3xl z-10"></div>
+            <div className="absolute inset-0 bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm opacity-50 group-hover:opacity-10 transition duration-300 rounded-3xl z-10"></div>
             <img className="w-full aspect-[4/3] object-cover object-bottom" src="images/coverimage.jpg" />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-20">
               <h1 className="text-4xl font-croc-logo drop-shadow-md">Projects</h1>
@@ -43,7 +43,7 @@ const HomePage = () => {
         {/* Events */}
         <div className="rounded-3xl overflow-hidden shadow-xl relative group">
           <Link href="https://croc.tidyhq.com/public/schedule/events">
-            <div className="absolute inset-0 bg-croc-dark-blue opacity-50 group-hover:opacity-10 transition duration-300 rounded-3xl z-10"></div>
+            <div className="absolute inset-0 bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm opacity-50 group-hover:opacity-10 transition duration-300 rounded-3xl z-10"></div>
             <img className="w-full aspect-[4/3] object-cover object-bottom" src="images/cover_3.jpg" />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-20">
               <h1 className="text-4xl font-croc-logo drop-shadow-md">Events</h1>
@@ -55,7 +55,7 @@ const HomePage = () => {
         {/* Hackathon */}
         <div className="rounded-3xl overflow-hidden shadow-xl relative group">
           <Link href="/hackathon">
-            <div className="absolute inset-0 bg-croc-dark-blue opacity-50 group-hover:opacity-10 transition duration-300 rounded-3xl z-10"></div>
+            <div className="absolute inset-0 bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm opacity-50 group-hover:opacity-10 transition duration-300 rounded-3xl z-10"></div>
             <img className="w-full aspect-[4/3] object-cover object-bottom" src="images/cover_hackathon_2.jpg" />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-20">
               <h1 className="text-4xl font-croc-logo drop-shadow-md">Hackathon</h1>
@@ -67,7 +67,7 @@ const HomePage = () => {
         {/* About Us */}
         <div className="rounded-3xl overflow-hidden shadow-xl relative group">
           <Link href="/about-us">
-            <div className="absolute inset-0 bg-croc-dark-blue opacity-50 group-hover:opacity-10 transition duration-300 rounded-3xl z-10"></div>
+            <div className="absolute inset-0 bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm opacity-50 group-hover:opacity-10 transition duration-300 rounded-3xl z-10"></div>
             <img className="w-full aspect-[4/3] object-cover object-center" src="images/cover_4.jpg" />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center z-20">
               <h1 className="text-4xl font-croc-logo drop-shadow-md">Who are we?</h1>

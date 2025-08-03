@@ -23,7 +23,7 @@ const ProjectPage = (props: any) => {
     const slug = props.params.slug;
     const content = getPageContent(slug);
     return (
-        <div className="bg-croc-dark-blue py-6">
+        <div className="bg-croc-dark-blue py-6 pt-12">
             <div className="bg-white py-5 px-8 rounded-3xl text-justify shadow-md mx-6 md:mx-[20%]">
                 <article className="prose md:prose-xl prose-img:w-full max-w-none">
                     <Markdown>{content}</Markdown>

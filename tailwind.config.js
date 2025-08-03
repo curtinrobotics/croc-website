@@ -14,7 +14,9 @@ module.exports = {
         'croc-light-grey': '#999999',
         'croc-dark-grey': '#3E3E40',
         'croc-dark-blue': '#21406c',
-        'croc-very-dark-blue': '#1e375d',
+        'croc-very-dark-blue': '#152741',
+        'croc-dark-blue-dm': '#182c47',
+        'croc-very-dark-blue-dm': '#101e33',
       },
       fontFamily: {
         'croc-paragraph': ['Avenir-Condensed', 'sans-serif'],

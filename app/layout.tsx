@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import Modal from "../components/Modal";
 import { FaInstagram, FaLink, FaFacebook } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
+import { SiLinktree } from "react-icons/si";
 import UpcomingEvents from "@/components/UpcomingEvents";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -17,16 +18,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const header = (
     <header className="fixed top-0 left-0 w-full border-b border-croc-light-grey bg-black/60 backdrop-blur-md z-50">
-      <nav className="flex justify-between items-center w-[92%] mx-auto py-4">
+      <nav className="flex justify-between items-center w-[90%] mx-auto py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img className="w-16 hover:animate-spin-slow drop-shadow-md" src="images/CRoCLogo.png" alt="Logo" />
-          <h1 className="text-6xl ml-4 text-white font-croc-logo hidden 2xl:inline-block drop-shadow-md">
-            Curtin Robotics Club
-          </h1>
-          <h1 className="text-6xl ml-4 text-white font-croc-logo inline-block 2xl:hidden drop-shadow-md">
+          <img className="w-20 hover:animate-spin-slow drop-shadow-md" src="images/CRoCLogo.png" alt="Logo" />
+          <div className="ml-4 text-white font-croc-logo text-[2.6rem] leading-[0.6] flex flex-col drop-shadow-md">
+            <span>Curtin</span>
+            <span className="text-croc-blue">Robotics</span>
+            <span>Club</span>
+          </div>
+          {/*<h1 className="text-6xl ml-4 text-white font-croc-logo inline-block md:hidden drop-shadow-md">
             CRoC
-          </h1>
+          </h1>*/}
         </Link>
 
         {/* Hamburger Menu for Mobile */}
@@ -38,13 +41,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </button>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-8 font-croc-paragraph text-white">
+        <ul className="hidden md:flex xl:gap-8 gap-4 font-croc-paragraph text-white">
           <li><Link className="hover:text-croc-blue" href="/project-home">PROJECTS</Link></li>
           <li><a className="hover:text-croc-blue" href="https://croc.tidyhq.com/public/schedule/events">EVENTS</a></li>
           <li className="relative">
             <Link className="hover:text-croc-blue" href="/hackathon">HACKATHON</Link>
           </li>
           <li><Link className="hover:text-croc-blue" href="/about-us">ABOUT US</Link></li>
+          <a href="https://croc.tidyhq.com/public/membership_levels">
+            <button className="bg-white text-croc-dark-blue px-6 rounded-full drop-shadow-md hover:bg-croc-blue hover:text-white">
+              SIGN UP
+            </button>
+          </a>
         </ul>
 
         {/* Mobile Dropdown Menu */}
@@ -65,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Link href="/about-us" className="hover:text-croc-blue" onClick={toggleMenu}>ABOUT US</Link>
           <a href="https://croc.tidyhq.com/public/membership_levels">
             <button className="bg-white text-croc-dark-blue px-6 py-3 rounded-full drop-shadow-md hover:bg-croc-blue hover:text-white">
-              Sign Up
+              SIGN UP
             </button>
           </a>
         </div>
@@ -74,7 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   );
 
   const footer = (
-    <footer className="bg-croc-dark-blue text-white py-6">
+    <footer className="bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm text-white py-6">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6 space-y-4 md:space-y-0">
 
         {/* Left Side: Contact Info */}
@@ -98,11 +106,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </a>
           {/* Linktree */}
           <a href="https://linktr.ee/curtinroboticsclub" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-2xl transition">
-            <FaLink />
+            <SiLinktree className="text-2xl text-gray-400 hover:text-white" />
           </a>
           {/* TidyHQ */}
-          <a href="https://croc.tidyhq.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-2xl transition">
-            <MdDashboard />
+          <a href="https://croc.tidyhq.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+            <span className="font-bold">tidy</span>hq
           </a>
         </div>
 
@@ -115,15 +123,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <title>CRoC</title>
       </head>
-      <body className="bg-croc-very-dark-blue">
-        {header}
-        <div className="bg-croc-very-dark-blue z-0 pt-20">
-          {children}
+      <body className="bg-croc-very-dark-blue dark:bg-croc-very-dark-blue-dm">
+        <div className="min-h-screen flex flex-col">
+          {header}
+          <div className="flex-grow bg-croc-dark-blue dark:bg-croc-dark-blue-dm z-0 pt-20">
+            {children}
+          </div>
+          {/*<div className="relative z-20">
+            <UpcomingEvents />
+          </div>*/}
+          {footer}
         </div>
-        {/*<div className="relative z-20">
-          <UpcomingEvents />
-        </div>*/}
-        {footer}
       </body>
     </html>
   );
