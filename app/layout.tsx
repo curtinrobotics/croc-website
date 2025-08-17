@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   const header = (
-    <header className="fixed top-0 left-0 w-full border-b border-croc-light-grey bg-black/60 backdrop-blur-md z-50">
+    <header className="fixed top-0 left-0 w-full border-b-2 border-croc-blue bg-black/60 backdrop-blur-md z-50">
       <nav className="flex justify-between items-center w-[90%] mx-auto py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center">
@@ -127,7 +127,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="min-h-screen flex flex-col">
           {header}
           <div className="flex-grow bg-croc-dark-blue dark:bg-croc-dark-blue-dm z-0 pt-20">
-            {children}
+            <div className="bg-fixed insert-0 bg-[url(/images/croc-bg.png)] top-0 left-0 w-full h-full bg-cover">
+              {children}
+            </div>
           </div>
           {/*<div className="relative z-20">
             <UpcomingEvents />

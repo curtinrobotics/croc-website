@@ -16,8 +16,8 @@ const AboutPage = (props: any) => {
     const slug = "about";
     const content = getPageContent(slug);
     return (
-        <div className="py-6">
-            <div className="bg-white py-5 px-8 rounded-3xl text-justify shadow-md mx-6 md:mx-[20%]">
+        <div className="pb-4 pt-14">
+            <div className="bg-white py-5 px-8 rounded-3xl text-justify shadow-md mx-6 md:mx-[20%] border-2 border-croc-blue">
                 <article className="prose md:prose-xl prose-img:w-full max-w-none">
                     <Markdown>{content}</Markdown>
                 </article>
