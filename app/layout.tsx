@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   
   const header = (
-    <header className = "border-b border-croc-light-grey pt-1 pb-4">
+    <header className="sticky top-0 z-50 backdrop-blur-md bg-croc-very-dark-blue/80 border-b border-croc-light-grey/30 pt-1 pb-4 transition-all duration-300">
       <nav className="flex justify-between item-center w-[92%] pt- mx-auto">
         <Link href="/">
           <img className="flex absolute mt-1 w-16 hover:animate-spin-slow drop-shadow-md" src="images/CRoCLogo.png"></img>
@@ -22,23 +22,23 @@ export default function RootLayout({
         <div className="md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
           <ul className="flex sm:flex-row flex-col sm:item-center gap-8 2xl:gap-[4vw] font-croc-paragraph text-white mt-3">
             <li>
-              <a className="hover:text-croc-blue" href="/project-home">PROJECTS</a>
+              <a className="hover:text-croc-blue transition-colors duration-200" href="/project-home">PROJECTS</a>
             </li>
             <li>
-              <a className="hover:text-croc-blue" href="https://croc.tidyhq.com/public/schedule/events">EVENTS</a>
+              <a className="hover:text-croc-blue transition-colors duration-200" href="https://croc.tidyhq.com/public/schedule/events">EVENTS</a>
             </li>
             <li className="relative">
-              <a className="hover:text-croc-blue" href="/hackathon">HACKATHON</a>
-              <span className="absolute bottom-3 left-20 text-xs bg-croc-blue text-white px-2 py-1 rounded-full">NEW</span>
+              <a className="hover:text-croc-blue transition-colors duration-200" href="/hackathon">HACKATHON</a>
+              <span className="absolute bottom-3 left-20 text-xs bg-croc-blue text-white px-2 py-1 rounded-full animate-pulse shadow-md">NEW</span>
             </li>
             <li>
-              <a className="hover:text-croc-blue" href="/about-us">ABOUT US</a>
+              <a className="hover:text-croc-blue transition-colors duration-200" href="/about-us">ABOUT US</a>
             </li>
           </ul>
         </div>
         <div>
           <a href="https://croc.tidyhq.com/public/membership_levels">
-            <button className="bg-white text-base text-croc-dark-blue px-5 py-2 rounded-full drop-shadow-md hover:bg-croc-blue hover:text-white mt-4">Sign Up</button>
+            <button className="bg-white text-base text-croc-dark-blue px-5 py-2 rounded-full shadow-lg hover:shadow-xl hover:bg-croc-blue hover:text-white mt-4 transition-all duration-300 transform hover:-translate-y-0.5">Sign Up</button>
           </a>
         </div>
       </nav>
